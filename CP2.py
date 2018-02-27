@@ -10,14 +10,12 @@ while watchdog <= 4:
     Shuf = input('Shuffle? Enter Y (yes) or N (no): ')
     if Shuf == "Y" or Shuf == "y" or Shuf == "N" or Shuf == "n":
         break
-    elif watchdog <=2:
+    elif watchdog <4:
         print('Wrong Input. Please Try Again...')
         watchdog += 1
-    elif watchdog > 2 and watchdog < 4:
-        print('I remember when I first learned to read. Please enter Y or N')
-        watchdog += 1
+   
     else:
-        print('Since you apparently can\'t read. I\'m a chunky monkey from funky town')
+        
         print('\n\nExiting Program')
         sys.exit()
 watchdog = 0
@@ -33,11 +31,8 @@ while watchdog <= 4:
         
     if  Draw >= 1 and int(Draw) <= 10:
         break
-    elif watchdog <=2:
+    elif watchdog <4:
         print('Wrong Input. Please Try Again...')
-        watchdog += 1
-    elif watchdog > 2 and watchdog < 4:
-        print('If you can read, did you make it this far just by luck?')
         watchdog += 1
     else:
         print('Well, you tried...')
