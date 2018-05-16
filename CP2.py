@@ -44,12 +44,12 @@ counter = 0
 deck = Deck()
 
 #deck in this def is not a public variable. Cannot be used outside
-def shuffledatbigdeck(deck):
+def shuffledatdeck(deck):
     random.shuffle(deck)
     return
 #shuffle
 if Shuf == "Y":
-    shuffledatbigdeck(deck.deck)
+    shuffledatdeck(deck.deck)
     while counter < Draw:
         print('\n* ', deck.deck[counter].value,'of', deck.deck[counter].suit)
         counter += 1
